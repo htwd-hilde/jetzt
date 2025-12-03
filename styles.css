@@ -41,13 +41,13 @@ body {
     font-size: 17px;
     font-weight: 400;
     transition: background-color 0.3s ease;
-    border-right: 5px solid rgba(255, 255, 255, 0.3);
+    border-right: 0px solid rgba(255, 255, 255, 0.3);
     flex: 1;
     text-align: center;
 }
 
 .nav-link:first-child {
-    border-left: 5px solid rgba(255, 255, 255, 0.3);
+    border-left: 0px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-link:hover {
