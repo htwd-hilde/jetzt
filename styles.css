@@ -17,7 +17,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #4169E1;
+    background-color: #5B6EC8;
     padding: 0;
     position: fixed;
     top: 0;
@@ -30,31 +30,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
-    padding: 20px 40px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 18px 50px;
+    font-size: 17px;
+    font-weight: 400;
     transition: background-color 0.3s ease;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    flex: 1;
+    text-align: center;
 }
 
 .nav-link:first-child {
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #4169E1 0%, #5B7FE8 100%);
+    background: linear-gradient(180deg, #5B6EC8 0%, #7D8BD6 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -62,47 +64,66 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-    padding: 80px 20px 40px;
+    padding: 100px 20px 60px;
     position: relative;
 }
 
 .hero-content {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .hero-title {
-    font-size: 120px;
+    font-size: 140px;
     font-weight: 700;
-    letter-spacing: 10px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-bottom: 25px;
 }
 
 .hero-subtitle {
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 300;
     max-width: 800px;
     line-height: 1.4;
+    margin: 0 auto;
 }
 
 .hero-button {
-    position: absolute;
-    bottom: 60px;
-    left: 50px;
     background-color: transparent;
     color: white;
     border: 3px solid white;
     border-radius: 50px;
-    padding: 18px 45px;
-    font-size: 22px;
-    font-weight: 600;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
+    display: inline-block;
+    margin: 30px 0 60px 0;
 }
 
 .hero-button:hover {
     background-color: white;
-    color: #4169E1;
+    color: #5B6EC8;
+}
+
+.hero-footer {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.project-duration {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.project-info {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
 }
 
 /* Section Styles */
@@ -117,183 +138,241 @@ body {
 
 .section-title {
     background-color: transparent;
-    color: #4169E1;
-    border: 3px solid #4169E1;
+    color: white;
+    border: 3px solid white;
     border-radius: 50px;
-    padding: 18px 45px;
-    font-size: 32px;
-    font-weight: 600;
+    padding: 15px 45px;
+    font-size: 28px;
+    font-weight: 500;
     display: inline-block;
-    margin-bottom: 40px;
-}
-
-.subsection-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 50px;
 }
 
 .text-block {
     font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 20px;
-    color: #555;
+    margin-bottom: 25px;
+    color: white;
 }
 
 .text-block strong {
     font-weight: 600;
-    color: #333;
 }
 
 /* Über HILDE Section */
 .ueber-hilde {
-    background-color: #5B7FE8;
+    background-color: #7D8BD6;
     color: white;
-}
-
-.ueber-hilde .section-title {
-    color: white;
-    border-color: white;
-}
-
-.ueber-hilde .subsection-title {
-    color: white;
-}
-
-.ueber-hilde .text-block {
-    color: white;
-}
-
-.ueber-hilde .text-block strong {
-    color: white;
-    font-weight: 700;
 }
 
 /* Studieninfo Section */
 .studieninfo {
-    background-color: #f8f9fa;
+    background-color: #A9B3E3;
+    color: white;
+}
+
+.studieninfo .section-title {
+    color: white;
+    border-color: white;
 }
 
 .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 50px;
     margin-top: 40px;
 }
 
 .info-column {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 0;
 }
 
 .column-title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
-    color: #4169E1;
+    color: white;
     margin-bottom: 30px;
 }
 
 .info-subtitle {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
-    color: #333;
-    margin-top: 25px;
+    color: white;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
 .info-list {
     margin-left: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .info-list li {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 8px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: white;
+    margin-bottom: 10px;
 }
 
 /* Teilnahmebedingungen Section */
 .teilnahmebedingungen {
-    background-color: white;
+    background-color: #BEC7ED;
+    color: #333;
+}
+
+.teilnahmebedingungen .section-title {
+    color: white;
+    border-color: white;
+}
+
+.teilnahme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.teilnahme-box {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.teilnahme-ja {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.teilnahme-nein {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.teilnahme-heading {
+    font-size: 19px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.teilnahme-list {
+    margin-left: 25px;
+}
+
+.teilnahme-list li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 /* Footer */
 .footer {
-    background-color: #2c3e50;
+    background-color: #7D8BD6;
     color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 0;
+    padding: 50px 20px;
 }
 
-.footer p {
-    font-size: 16px;
+.footer-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.logo-item {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 /* Responsive Design */
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
+    .info-grid,
+    .teilnahme-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .hero-footer {
+        position: static;
+        margin-top: 40px;
+        left: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
     .nav-links {
         flex-wrap: wrap;
     }
     
     .nav-link {
-        padding: 15px 25px;
-        font-size: 16px;
+        padding: 15px 20px;
+        font-size: 15px;
+        flex: 1 1 50%;
     }
     
     .hero-title {
         font-size: 80px;
-        letter-spacing: 6px;
+        letter-spacing: 8px;
     }
     
     .hero-subtitle {
-        font-size: 22px;
-    }
-    
-    .hero-button {
-        position: static;
-        margin-top: 40px;
-    }
-    
-    .info-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    .nav-link {
-        padding: 12px 15px;
-        font-size: 14px;
-    }
-    
-    .hero-title {
-        font-size: 60px;
-        letter-spacing: 4px;
-    }
-    
-    .hero-subtitle {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .section {
-        padding: 60px 15px;
+        padding: 60px 20px;
     }
     
     .section-title {
-        font-size: 26px;
-        padding: 15px 35px;
+        font-size: 24px;
+        padding: 12px 35px;
     }
     
     .text-block {
         font-size: 16px;
     }
     
-    .info-column {
-        padding: 25px;
+    .teilnahme-box {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        flex: 1 1 100%;
+        border-right: none !important;
+        border-left: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .hero-title {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .footer-logos {
+        flex-direction: column;
+        gap: 15px;
     }
 }
